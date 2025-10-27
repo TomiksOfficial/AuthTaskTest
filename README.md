@@ -11,10 +11,13 @@
 Запуск:
 1. Установка зависимостей: pip install -r requirements.txt
 2. Создайте файла переменных окружения .env в корне проекта и поместите туда две переменные:
+
 JWT_SECRET=COOL_SECRET
+
 ALGORITHM=HS256
-3. Запуск приложения: uvicorn app.main:fapi --reload --port 20000
-4. Зайти на страницу docs: http://127.0.0.1:20000/docs
+
+4. Запуск приложения: uvicorn app.main:fapi --reload --port 20000
+5. Зайти на страницу docs: http://127.0.0.1:20000/docs
 
 Авторизация выполнена в формате JWT токенов с использованием FastAPI.
 Реализованы:
